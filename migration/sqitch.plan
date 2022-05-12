@@ -1,0 +1,9 @@
+%syntax-version=1.0.0
+%project=budget-tracker
+
+init 2022-03-30T07:30:01Z Natto-PKP <wmainvielle@gmail.com> # Create database
+technical-views-functions 2022-03-31T07:45:32Z Natto-PKP <wmainvielle@gmail.com> # create technical views and functions
+precise-technical-functions.sql 2022-04-07T07:35:00Z Natto-PKP <wmainvielle@gmail.com> # add where condition for accountId
+remove-user_token-table 2022-04-07T11:15:48Z Natto-PKP <wmainvielle@gmail.com> # switch user token system to jwt module
+default-categories 2022-04-13T12:48:38Z Natto-PKP <wmainvielle@gmail.com> # add default categories
+create-tables-team 2022-04-14T13:17:33Z Natto-PKP <wmainvielle@gmail.com> # create tables for team system
