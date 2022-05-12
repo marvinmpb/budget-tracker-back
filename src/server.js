@@ -5,7 +5,7 @@ const path = require('path');
 
 const server = express();
 
-server.use(cors({ origin: 'https://thunderous-concha-01ff2a.netlify.app' }));
+server.use(cors({ origin: 'https://budget-tracker-application.netlify.app' }));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
