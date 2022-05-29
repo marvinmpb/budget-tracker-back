@@ -5,7 +5,17 @@ const path = require('path');
 
 const server = express();
 
-server.use(cors({ origin: 'https://budget-tracker-application.netlify.app' }));
+const whitelist = ['http://localhost:3000', 'https://budget-tracker-application.netlify.app']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+server.use(cors(corsOptions));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
